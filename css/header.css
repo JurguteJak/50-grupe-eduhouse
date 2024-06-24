@@ -1,8 +1,10 @@
 .main-header {
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    margin-bottom: 20px;
+  
 }
 
 .form {
@@ -33,7 +35,6 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 20px;   
 }
 
 .notifications {
