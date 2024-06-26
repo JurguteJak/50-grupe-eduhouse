@@ -11,7 +11,7 @@ body {
 
 main {  
     display: grid;
-    grid-template-columns: 1fr, 2fr, 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
         'header header header'
         'progress progress subscription'
@@ -26,22 +26,45 @@ main {
 
 .course-progress {
     grid-area: progress;
-    height: 100%;
-   
 }
 
 .subscription {
     grid-area: subscription;
-    
 }
 
 .popular-categories {
     grid-area: popular;
-
 }
 
 .top-mentors {
-    grid-area: mentors;
-    
-    
+    grid-area: mentors;  
 }
+
+.block {
+    display: grid; 
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.block.block-bg {
+    background-color: #eefcef;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.block > .tittle {
+    margin: 0;
+    font-size: 20px;
+}
+
+.block > .link { 
+    align-self: center;
+    justify-self: end;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+}
+
+.block > .content {
+    grid-column: span 2;
+} 
